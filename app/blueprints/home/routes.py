@@ -1,6 +1,5 @@
 from flask import render_template
 from . import home
-import paramiko
 
 @home.route('/')
 def index():
