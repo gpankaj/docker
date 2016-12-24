@@ -37,6 +37,6 @@ hooks:
   # During the ApplicationInstall deployment lifecycle event, run the commands
   #   in the script specified in "location".
   ApplicationStart:
-    - location: /docker-management/startApp.sh
+    - location: ./startApp.sh
       timeout: 10
       runas: root
