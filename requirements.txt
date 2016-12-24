@@ -6,7 +6,6 @@ Flask-Script==0.6.7
 Flask-WTF==0.12
 flask-wysiwyg==0.1
 flaskckeditor==1.6
-Flask-Misaka==0.4.1
 Flask-Moment==0.5.1
 Flask-JSGlue==0.3
 Flask-Login==0.2.11
