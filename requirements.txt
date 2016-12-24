@@ -14,6 +14,5 @@ Jinja2==2.8
 requests==2.9.1
 requests-oauthlib==0.6.1
 PyYAML==3.12
-mysql-python==1.2.5
 netaddr==0.7.15
 Markdown==2.6.6
