@@ -42,7 +42,7 @@ ApplicationStop:
     runas:
 # During the BeforeInstall deployment lifecycle event, run the commands
 #   in the script specified in "location".
-  BeforeInstall:
+BeforeInstall:
   - location:
     timeout:
     runas:
