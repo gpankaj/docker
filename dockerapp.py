@@ -7,6 +7,7 @@ for env in os.environ:
     print env, os.environ[env]
     os.environ[env] = os.environ[env]
 os.environ["ENVIRONMENT"] = "TEST"
+os.environ["OWNER"] = "Pankaj Gupta"
 
 
 from manage import app as application
