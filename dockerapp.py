@@ -3,7 +3,11 @@ import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/flaskApp/docker-management")
 
+for env in os.environ:
+    print env, os.environ[env]
+    os.environ[env] = os.environ[env]
 os.environ["ENVIRONMENT"] = "TEST"
+
 
 from manage import app as application
 

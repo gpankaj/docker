@@ -1,5 +1,5 @@
 #!/bin/sh
-export ENVIRONMENT=TEST
+
 sudo rm -rf /tmp/all_current_envs
 env > /tmp/all_current_envs
 sudo cp -f /var/www/flaskApp/docker-management/FlaskApp-QA.conf /etc/apache2/sites-available/FlaskApp.conf
