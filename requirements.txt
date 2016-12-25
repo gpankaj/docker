@@ -15,3 +15,5 @@ requests-oauthlib==0.6.1
 PyYAML==3.12
 netaddr==0.7.15
 Markdown==2.6.6
+configparser==3.5.0
+

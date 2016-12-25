@@ -4,10 +4,18 @@ logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0,"/var/www/flaskApp/docker-management")
 
 for env in os.environ:
-    print env, os.environ[env]
-    os.environ[env] = os.environ[env]
-os.environ["ENVIRONMENT"] = "TEST"
+    os.environ[str(env)] = str(os.environ[env])
+
+if os.environ.get("ENVIRONMENT", "") != "":
+    os.environ["ENVIRONMENT"] = os.environ.get("ENVIRONMENT")
+else:
+    os.environ["ENVIRONMENT"] = "BETA"
+    pass
 os.environ["OWNER"] = "Pankaj Gupta"
+
+
+
+
 
 
 from manage import app as application
