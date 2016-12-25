@@ -23,7 +23,7 @@ def debug():
         try:
             with open(file_name) as f:
                 for line in f:
-                    all_lines.append(line)
+                    all_lines.append(line+"\n")
             return render_template('home/index.html', all_envs={file_name: all_lines})
         except:
             return render_template('home/index.html', all_envs={file_name: "File Not found"})
