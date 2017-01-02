@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -x
 
 sudo rm -rf /tmp/all_current_envs
 env > /tmp/all_current_envs
