@@ -10,6 +10,7 @@ if os.environ.get("ENVIRONMENT", "") != "":
     os.environ["ENVIRONMENT"] = os.environ.get("ENVIRONMENT")
 else:
     os.environ["ENVIRONMENT"] = "BETA"
+    os.environ["DEMO"] = "TRUE"
     pass
 os.environ["OWNER"] = "Pankaj Gupta"
 
